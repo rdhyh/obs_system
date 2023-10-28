@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  color:#594A47
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px 5px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-image: url('bg pink dark.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font: 14px sans-serif;
+}
+h2 {
+color:#594A47;
+}
+h4 {
+color:#594A47;
+}
+p {
+color:#594A47;
+}
+div { 
+  padding: 25px 50px 25px 50px;
+  background-color: #FCBACB;
+}
+
+</style>
+</head>
+<body>
+
+</br>
+</br>
+
+<div>
+<h2>CATEGORY >> ADD CATEGORY</h2>
+
+<br>
+<center><h3> Add new category <h3><center>
+<br>
+
+<center> <form action="addcategoryprocess.php" method="post">
+
+	Category ID : <br>
+	<br> <input type="text" name="id_category"><br>
+	<br>Category Name : <br>
+	<br> <input type="text" name="category_name"><br>
+	<br> <input type="Submit" value="Submit">
+	
+</form> <center>	
+</div>
+
+</body>
+</html>
+
+

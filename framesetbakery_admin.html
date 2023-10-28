@@ -1,0 +1,25 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: loginbakery.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> ONLINE BAKERY SHOP SYSTEM </title>
+</head>
+
+<FRAMESET ROWs="125,*">
+<FRAME NAME ="UpperFrame" SRC="headerbakery4.html">
+
+<FRAMESET COLS="300,*">
+<FRAME NAME ="LeftFrame" SRC="navbarbakery4homescreenadmin.html">
+<FRAME NAME ="RightFrame" SRC="welcomebakerycarousel.html">
+</FRAMESET>
+</html>
